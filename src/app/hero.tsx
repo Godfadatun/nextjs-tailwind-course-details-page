@@ -1,3 +1,5 @@
+// @ts-ignore
+
 "use client";
 
 import { Button, Typography, Card } from "@material-tailwind/react";
@@ -22,12 +24,12 @@ function Hero() {
         >
           Premium land for sale—build your dream home or invest in your future.
         </Typography>
-        <div>
+        <div className="flex gap-4">
           <Button variant="gradient" color="white">
-          Explore Our Land Listings
+            Explore Our Land Listings
           </Button>
-          <Button variant="gradient" color="white">
-          Explore Our Land Listings
+          <Button variant="outlined" color="white" className="border-white">
+            Call +2349047171717
           </Button>
         </div>
       </div>
