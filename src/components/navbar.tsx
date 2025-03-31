@@ -64,8 +64,13 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"}>
-          Material Tailwind
+        <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"} className="flex items-center">
+          <img
+            src="/image/wigramLogo.png" // Replace with your logo's path or URL
+            alt="WIGRAM Properties Logo"
+            className="h-8 w-8 mr-2" // Adjust size and spacing as needed
+          />
+          WIGRAM Properties
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
