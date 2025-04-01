@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   typescript: {
     // Ignore TypeScript errors during build
     ignoreBuildErrors: true,
@@ -8,9 +9,13 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "wigram.properties", // Specific domain
       },
-    ],
+      {
+        protocol: "https",
+        hostname: "*.wigram.properties", // Matches subdomains like sub.wigram.properties
+      },
+    ],  
   },
 };
 
